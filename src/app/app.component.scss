@@ -1,0 +1,12 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .user-options {
+        display: flex;
+    }
+}
