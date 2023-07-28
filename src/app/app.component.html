@@ -1,18 +1,26 @@
-<mat-toolbar class="toolbar" color="primary">
-    <div class="logo">
-        <button mat-icon-button aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-          </button>
-          <span>My App</span>
-    </div>
-    <div class="user-options">
-        <button mat-icon-button aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
-          </button>
-          <button mat-icon-button aria-label="Example icon-button with share icon">
-            <mat-icon>share</mat-icon>
-          </button>
-    </div>
-  </mat-toolbar>
-<router-outlet></router-outlet>
-<small>Hecho con ❤️ por Oriana</small>
+<div class="app-wrapper">
+    <mat-toolbar class="toolbar" color="primary">
+        <div class="logo">
+            <button mat-icon-button aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+              </button>
+              <span>My App</span>
+        </div>
+        <div class="user-options">
+            <button mat-icon-button aria-label="Example icon-button with heart icon">
+                <mat-icon>favorite</mat-icon>
+              </button>
+              <button mat-icon-button aria-label="Example icon-button with share icon">
+                <mat-icon>face</mat-icon>
+              </button>
+        </div>
+      </mat-toolbar>
+    
+      <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav mode="side" opened> <app-nav></app-nav></mat-sidenav>
+        <mat-sidenav-content class="sidenav-content">
+            <router-outlet></router-outlet>
+            <small>Hecho con ❤️ por Oriana</small>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+</div>

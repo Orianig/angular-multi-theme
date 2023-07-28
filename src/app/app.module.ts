@@ -9,12 +9,14 @@ import { MaterialModule } from './shared/material/material.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { NavComponent } from './shared/components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

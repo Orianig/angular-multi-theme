@@ -1,0 +1,18 @@
+.navigation-wrapper {
+    .navigation-link {
+      cursor: pointer;
+      padding-right: 3rem;
+      position: relative;
+      &.active-link {
+        background: rgba(0,0,0,0.1);
+      }
+      // &:before {
+      //   background-color: red;
+      //   content: '';
+      //   height: 1rem;
+      //   position: absolute;
+      //   width: 1rem;
+      //   bottom: -1rem;
+      // }
+    }
+  }

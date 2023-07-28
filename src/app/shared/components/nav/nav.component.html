@@ -1,0 +1,22 @@
+<mat-list class="navigation-wrapper">
+    <!-- <div mat-subheader>Navegación</div> -->
+    <!-- El [routerLinkActiveOptions]="{ exact: true }" se usa cuando el routerLink esta vacío -->
+    <a
+      class="navigation-link"
+      mat-list-item
+      routerLink="home"
+      routerLinkActive="active-link"
+    >
+      <mat-icon matListItemIcon>dashboard</mat-icon>
+      <div matListItemTitle matListItemTitle>Home</div>
+    </a>
+    <a
+      class="navigation-link"
+      mat-list-item
+      routerLink="about-us"
+      routerLinkActive="active-link"
+    >
+      <mat-icon matListItemIcon>emoji_people</mat-icon>
+      <span matListItemTitle>About us</span></a
+    >
+  </mat-list>
