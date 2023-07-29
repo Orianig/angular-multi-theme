@@ -33,10 +33,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build Angular app
-        run: ng build --prod --base-href /angular-material-theme/  # Cambiar "<repository-name>" por el nombre de tu repositorio.
+        run: ng build:prod
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-            build_dir: dist
+          build_dir: dist
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
