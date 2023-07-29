@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavComponent } from './shared/components/nav/nav.component';
+import { ThemeComponent } from './pages/theme/theme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutUsComponent,
-    NavComponent
+    NavComponent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,
