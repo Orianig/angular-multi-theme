@@ -1,15 +1,9 @@
 <h1>Este es el título de la página</h1>
 
-<mat-grid-list cols="2">
-  <mat-grid-tile [colspan]="1" [rowspan]="1">
+<div class="card-grid">
+  <div class="slider-card">
     <app-slide-toggles></app-slide-toggles>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]="2">
-    <app-buttons></app-buttons>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]="1">
-    <app-badges></app-badges>
-  </mat-grid-tile>
-</mat-grid-list>
-
-<div stlye="padding-button: 40px">Hola</div>
+  </div>
+  <div class="badges-card"><app-badges></app-badges></div>
+  <div class="buttons-card"><app-buttons></app-buttons></div>
+</div>

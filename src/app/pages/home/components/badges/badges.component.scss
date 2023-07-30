@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    mat-card {
+      width:100%;
+    }
   }
   
   .demo-section + .demo-section {
