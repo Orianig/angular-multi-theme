@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-multi-theme';
-  isDarkMode = false;
-  lightIcon = 'wb_sunny';
-  darkIcon = 'nights_stay';
-  
+  isDarkMode = true;
+
+  constructor() {
+    this.toggleTheme();
+  }
 
   toggleTheme() {
     if (this.isDarkMode) {

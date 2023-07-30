@@ -13,12 +13,8 @@
           mat-icon-button
           aria-label="Icon-button with face icon"
         >
-          <mat-icon class="icon-light" *ngIf="!isDarkMode">{{
-            lightIcon
-          }}</mat-icon>
-          <mat-icon class="icon-dark" *ngIf="isDarkMode">{{
-            darkIcon
-          }}</mat-icon>
+          <mat-icon class="icon-light" *ngIf="!isDarkMode">wb_sunny</mat-icon>
+          <mat-icon class="icon-dark" *ngIf="isDarkMode">nights_stay</mat-icon>
         </button>
       </mat-slide-toggle>
       <button mat-icon-button aria-label="Icon-button with face icon">
