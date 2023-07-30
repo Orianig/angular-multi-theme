@@ -1,7 +1,11 @@
 <div class="app-wrapper">
   <mat-toolbar class="toolbar" color="primary">
     <div class="logo">
-      <button mat-icon-button aria-label="Example icon-button with menu icon">
+      <button
+        mat-icon-button
+        aria-label="Example icon-button with menu icon"
+        (click)="mySidenav.toggle()"
+      >
         <mat-icon>menu</mat-icon>
       </button>
       <span>My App</span>
@@ -24,7 +28,13 @@
   </mat-toolbar>
 
   <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav mode="side" opened> <app-nav></app-nav></mat-sidenav>
+    <mat-sidenav
+      #mySidenav
+      [mode]="isMobile ? 'over' : 'side'"
+      [opened]="!isMobile"
+    >
+      <app-nav></app-nav
+    ></mat-sidenav>
     <mat-sidenav-content class="sidenav-content">
       <router-outlet></router-outlet>
       <small>Hecho con ❤️ por Oriana</small>

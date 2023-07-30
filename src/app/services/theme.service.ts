@@ -10,11 +10,6 @@ export class ThemeService {
   }
 
   setTheme(theme: string) {
-    this.overlayContainer.getContainerElement().classList.forEach((cls) => {
-      if (cls.startsWith('theme-')) {
-        this.overlayContainer.getContainerElement().classList.remove(cls);
-      }
-    });
-    this.overlayContainer.getContainerElement().classList.add(theme);
+    // Todo: Cambiar tema de color y guardar color en local storage
   }
 }
