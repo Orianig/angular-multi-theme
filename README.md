@@ -5,5 +5,6 @@ Este proyecto esta realizado con Angular y Angular material, tiene como proposit
 Fue realizado con la finalidad de incursionar en los componentes de angular material y su funcionamiento.
 
 ![Dark Mode]([mi_imagen.png](https://github.com/Orianig/angular-multi-theme/blob/main/src/assets/Multi-theme-dark.JPG)
-![Light Mode][(mi_imagen.png)](https://github.com/Orianig/angular-multi-theme/blob/main/src/assets/Multi-theme-light.JPG)
+
+![Light Mode][(mi_imagen.png)]{https://github.com/Orianig/angular-multi-theme/blob/main/src/assets/Multi-theme-light.JPG)
 
